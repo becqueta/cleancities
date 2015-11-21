@@ -15,8 +15,8 @@ class QrController extends Controller
                                 ["lat" => '45,18938',
                                  "lng" => '5,72058'],
                             "2" =>
-                                ["lat" => 1,
-                                 "lng" => 1],
+                                ["lat" => '45,18941',
+                                 "lng" => '5,72025'],
                             "3" =>
                                 ["lat" => 1,
                                  "lng" => 1],
