@@ -12,8 +12,8 @@ use App\Incident;
 class QrController extends Controller
 {
     public $loc_qr_code_poubelle  = ["1" => 
-                                ["lat" => 1,
-                                 "lng" => 1],
+                                ["lat" => '45,18938',
+                                 "lng" => '5,72058'],
                             "2" =>
                                 ["lat" => 1,
                                  "lng" => 1],
@@ -75,6 +75,7 @@ class QrController extends Controller
             $incident->lng = $this->loc_qr_code_degradation[$id_qr]['lng'];;
             $incident->save();
         }
+        return view('merci');
     }
 
     /**
