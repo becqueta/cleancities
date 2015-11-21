@@ -53,6 +53,7 @@ class QrController extends Controller
             $incident->date = date("Y-m-d H:i:s");
             $incident->lat = $this->loc_qr_code_poubelle[$id_qr]['lat'];
             $incident->lng = $this->loc_qr_code_poubelle[$id_qr]['lng'];;
+            $incident->commentaire = $id_qr." ".$type_incident;
             $incident->save();
 
         }elseif($type_incident == 'eclairage'){
