@@ -17,9 +17,8 @@ class CreateIncident extends Migration
             $table->increments('id');
             $table->integer('id_user');
             $table->integer('id_type');
-            $table->string('libelle')->unique();
-            $table->string('commentaire');
-            $table->timestamp('date');
+            $table->string('commentaire')->nullable();
+            $table->dateTime('date');
             $table->string('lat');
             $table->string('lng');
         });

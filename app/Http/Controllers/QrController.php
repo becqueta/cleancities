@@ -7,8 +7,38 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
+use App\Incident;
+
 class QrController extends Controller
 {
+    public $loc_qr_code_poubelle 
+                          = ["1" => 
+                                ["lat" => ,
+                                 "lng" => ],
+                            "2" =>
+                                ["lat" => ,
+                                 "lng" => ]],
+                            "3" =>
+                                ["lat" => ,
+                                 "lng" => ]],
+                            "4" =>
+                                ["lat" => ,
+                                 "lng" => ]],
+                            "5" =>
+                                ["lat" => ,
+                                 "lng" => ]],
+                            "6" =>
+                                ["lat" => ,
+                                 "lng" => ]],
+                            "7" =>
+                                ["lat" => ,
+                                 "lng" => ]],
+                            "8" =>
+                                ["lat" => ,
+                                 "lng" => ]],
+                            "9" =>
+                                ["lat" => ,
+                                 "lng" => ]];
     /**
      * Display a listing of the resource.
      *
@@ -20,11 +50,30 @@ class QrController extends Controller
         if($type_incident == 'poubelle'){
             $incident = new Incident();
             $incident->id_type = 0;
-            $date = NOW();
+            $incident->id_user = 0;
+            $incident->date = date("Y-m-d H:i:s");
+            $incident->lat = $this->loc_qr_code_poubelle[$id_qr]['lat'];
+            $incident->lng = $this->loc_qr_code_poubelle[$id_qr]['lng'];;
+            $incident->save();
+
         }elseif($type_incident == 'eclairage'){
 
+            $incident = new Incident();
+            $incident->id_type = 0;
+            $incident->id_user = 0;
+            $incident->date = date("Y-m-d H:i:s");
+            $incident->lat = $this->loc_qr_code_eclairage[$id_qr]['lat'];
+            $incident->lng = $this->loc_qr_code_eclairage[$id_qr]['lng'];;
+            $incident->save();
         }elseif($type_incident == 'degradation'){
 
+            $incident = new Incident();
+            $incident->id_type = 0;
+            $incident->id_user = 0;
+            $incident->date = date("Y-m-d H:i:s");
+            $incident->lat = $this->loc_qr_code_degradation[$id_qr]['lat'];
+            $incident->lng = $this->loc_qr_code_degradation[$id_qr]['lng'];;
+            $incident->save();
         }
     }
 

@@ -8,4 +8,6 @@ class Incident extends Model
 {
     //
     protected $table = 'incident';
+
+    public $timestamps = false;
 }
