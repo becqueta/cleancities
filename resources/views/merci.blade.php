@@ -5,7 +5,7 @@
         <div class="container">
             <div class="intro-text">
                 <div class="intro-lead-in"></div>
-                <div class="intro-heading">Merci d'avoir signaler l'incident</div>
+                <div class="intro-heading">Merci d'avoir signalé l'incident</div>
                 <a href="#services" class="page-scroll btn btn-xl">We are coming soon</a>
             </div>
         </div>
