@@ -49,7 +49,7 @@ class QrController extends Controller
                                  "lng" => '5,72063']
                                  ];
 
-    public $loc_qr_code_degradation  = ["10" =>
+    public $loc_qr_code_degradation  = ["30" =>
                                 ["lat" => '45,18971',
                                  "lng" => '5,72063']
                                  ];
