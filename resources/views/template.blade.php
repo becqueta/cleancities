@@ -75,22 +75,22 @@
     @yield('main')
 
     <!-- jQuery -->
-    <script src="{{url('js/jquery.js)}}"></script>
+    <script src="{{url('js/jquery.js')}}"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="{{url('js/bootstrap.min.js)}}"></script>
+    <script src="{{url('js/bootstrap.min.js')}}"></script>
 
     <!-- Plugin JavaScript -->
-    <script src="{{url('http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js)}}"></script>
-    <script src="{{url('js/classie.js)}}"></script>
-    <script src="{{url('js/cbpAnimatedHeader.js)}}"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="{{url('js/classie.js')}}"></script>
+    <script src="{{url('js/cbpAnimatedHeader.js')}}"></script>
 
     <!-- Contact Form JavaScript -->
-    <script src="{{url('js/jqBootstrapValidation.js)}}"></script>
-    <script src="{{url('js/contact_me.js)}}"></script>
+    <script src="{{url('js/jqBootstrapValidation.js')}}"></script>
+    <script src="{{url('js/contact_me.js')}}"></script>
 
     <!-- Custom Theme JavaScript -->
-    <script src="{{url('js/agency.js)}}"></script>
+    <script src="{{url('js/agency.js')}}"></script>
 
 </body>
 
