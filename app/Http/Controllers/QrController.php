@@ -43,12 +43,16 @@ class QrController extends Controller
                                  "lng" => '5,7252'],
                             "14" =>
                                 ["lat" => '45,18971',
-                                 "lng" => '5,72063']
-                                 ,
+                                 "lng" => '5,72063'],
                             "10" =>
                                 ["lat" => '45,18971',
                                  "lng" => '5,72063']
                                  ];
+
+    public $loc_qr_code_degradation  = ["10" =>
+                                ["lat" => '45,18971',
+                                 "lng" => '5,72063']
+                                 ]];
     /**
      * Display a listing of the resource.
      *
