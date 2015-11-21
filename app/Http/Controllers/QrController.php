@@ -11,34 +11,33 @@ use App\Incident;
 
 class QrController extends Controller
 {
-    public $loc_qr_code_poubelle 
-                          = ["1" => 
-                                ["lat" => ,
-                                 "lng" => ],
+    public $loc_qr_code_poubelle  = ["1" => 
+                                ["lat" => 1,
+                                 "lng" => 1],
                             "2" =>
-                                ["lat" => ,
-                                 "lng" => ]],
+                                ["lat" => 1,
+                                 "lng" => 1],
                             "3" =>
-                                ["lat" => ,
-                                 "lng" => ]],
+                                ["lat" => 1,
+                                 "lng" => 1],
                             "4" =>
-                                ["lat" => ,
-                                 "lng" => ]],
+                                ["lat" => 1,
+                                 "lng" => 1],
                             "5" =>
-                                ["lat" => ,
-                                 "lng" => ]],
+                                ["lat" => 1,
+                                 "lng" => 1],
                             "6" =>
-                                ["lat" => ,
-                                 "lng" => ]],
+                                ["lat" => 1,
+                                 "lng" => 1],
                             "7" =>
-                                ["lat" => ,
-                                 "lng" => ]],
+                                ["lat" => 1,
+                                 "lng" => 1],
                             "8" =>
-                                ["lat" => ,
-                                 "lng" => ]],
+                                ["lat" => 1,
+                                 "lng" => 1],
                             "9" =>
-                                ["lat" => ,
-                                 "lng" => ]];
+                                ["lat" => 1,
+                                 "lng" => 1]];
     /**
      * Display a listing of the resource.
      *
