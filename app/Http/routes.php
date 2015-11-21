@@ -12,5 +12,9 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
+
+Route::get('titi', 'titiController@index');
+
+Route::get('qrcode/{type_incident}/{id_qr}', 'QrController@getIncident');
