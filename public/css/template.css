@@ -1,0 +1,45 @@
+body {
+	padding-top: 50px;
+}
+.starter-template {
+	padding: 40px 15px;
+	text-align: center;
+}
+
+.navbar {
+	background-color: #6CB860;
+    border-color: #6CB860;
+}
+
+.navbar-inverse .navbar-nav>li>a, .navbar-inverse .navbar-brand  {
+    color: white;
+}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+    background-color: rgba(8,8,8,0.2);
+}
+
+
+.actions {
+	width: 80%;
+	max-width: 200px;
+	margin-top: 20px;
+}
+.actions a {
+	color: #000000;
+	text-decoration: none!important;
+}
+.big-btn {
+	width: 100%;
+}
+
+
+.icon-problem {
+	width: 50px;
+	max-width: 100%;
+}
+
+.problem-name {
+	font-size: 20px;
+	padding-top: 10px;
+}
