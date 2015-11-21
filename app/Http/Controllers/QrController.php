@@ -35,9 +35,16 @@ class QrController extends Controller
                             "10" =>
                                 ["lat" => '45,1913',
                                  "lng" => '5,7309'],
-                            "9" =>
-                                ["lat" => 1,
-                                 "lng" => 1]];
+                            "14" =>
+                                ["lat" => '45,18971',
+                                 "lng" => '5,7252'],
+                            "19" =>
+                                ["lat" => '45,18938',
+                                 "lng" => '5,7252'],
+                            "14" =>
+                                ["lat" => '45,18971',
+                                 "lng" => '5,72063']
+                                 ];
     /**
      * Display a listing of the resource.
      *

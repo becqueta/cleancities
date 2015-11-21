@@ -8,7 +8,7 @@
       </a>
     </div>
     <div class="container text-center actions">
-      <a href="{{url('scan')}}}">
+      <a href="{{url('scanner')}}">
         <img src="{{url('img/scan.png')}}" class="big-btn">
         <p class="lead">Scanner</p>
       </a>

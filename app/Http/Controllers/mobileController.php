@@ -40,6 +40,7 @@ class mobileController extends Controller
     public function scanner()
     {
         //
+        return view('mobile.scanner');
     }
 
     /**
