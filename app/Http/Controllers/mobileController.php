@@ -28,7 +28,7 @@ class mobileController extends Controller
     public function signaler()
     {
         //
-        return view('report');
+        return view('mobile.report');
     }
 
     /**
