@@ -24,7 +24,7 @@
                     <ul class="timeline">
                         <li>
                             <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/1.jpg" alt="">
+                                <img class="img-circle img-responsive" src="{{url('img/about/1.jpg')}}" alt="">
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
@@ -38,7 +38,7 @@
                         </li>
                         <li class="timeline-inverted">
                             <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/2.jpg" alt="">
+                                <img class="img-circle img-responsive" src="{{url('img/about/2.jpg')}}" alt="">
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
@@ -52,7 +52,7 @@
                         </li>
                         <li>
                             <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/3.jpg" alt="">
+                                <img class="img-circle img-responsive" src="{{url('img/about/3.jpg')}}" alt="">
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
@@ -66,7 +66,7 @@
                         </li>
                         <li class="timeline-inverted">
                             <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/4.jpg" alt="">
+                                <img class="img-circle img-responsive" src="{{url('img/about/4.jpg')}}" alt="">
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
@@ -80,7 +80,7 @@
                         </li>
                         <li>
                             <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/1.jpg" alt="">
+                                <img class="img-circle img-responsive" src="{{url('img/about/1.jpg')}}" alt="">
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
@@ -117,7 +117,7 @@
            <div class="row">
                <div class="col-sm-3">
                    <div class="team-member">
-                       <img src="img/team/Remi.JPG" class="img-responsive img-circle" alt="">
+                       <img src="{{url('img/team/Remi.JPG')}}" class="img-responsive img-circle" alt="">
                        <h4>Rémi</h4>
                        <p class="text-muted">"The Head"</p>
 
@@ -127,7 +127,7 @@
                
                <div class="col-sm-3">
                    <div class="team-member">
-                       <img src="img/team/Micky.JPG" class="img-responsive img-circle" alt="">
+                       <img src="{{url('img/team/Micky.JPG')}}" class="img-responsive img-circle" alt="">
                        <h4>Micky</h4>
                        <p class="text-muted">"The Urbaniste"</p>
 
@@ -137,7 +137,7 @@
                
                <div class="col-sm-3">
                    <div class="team-member">
-                       <img src="img/team/Damien.JPG" class="img-responsive img-circle" alt="">
+                       <img src="{{url('img/team/Damien.JPG')}}" class="img-responsive img-circle" alt="">
                        <h4>Damien</h4>
                        <p class="text-muted">"The Businessman"</p>
 
@@ -145,7 +145,7 @@
                </div>
                                <div class="col-sm-3">
                    <div class="team-member">
-                       <img src="img/team/nonot.jpg" class="img-responsive img-circle" alt="">
+                       <img src="{{url('img/team/nonot.jpg')}}" class="img-responsive img-circle" alt="">
                        <h4>Nonot</h4>
                        <p class="text-muted">"The Sticker"</p>
 
@@ -154,7 +154,7 @@
                
                <div class="col-sm-4">
                    <div class="team-member">
-                       <img src="img/team/Arnaud.jpg" class="img-responsive img-circle" alt="">
+                       <img src="{{url('img/team/Arnaud.jpg')}}" class="img-responsive img-circle" alt="">
                        <h4>Arnaud</h4>
                        <p class="text-muted">"The Developper"</p>
 
@@ -163,7 +163,7 @@
                
                <div class="col-sm-4">
                    <div class="team-member">
-                       <img src="img/team/Maxence.JPG" class="img-responsive img-circle" alt="">
+                       <img src="{{url('img/team/Maxence.JPG')}}" class="img-responsive img-circle" alt="">
                        <h4>Maxence</h4>
                        <p class="text-muted">"The other Developper"</p>
 
@@ -172,7 +172,7 @@
                
                <div class="col-sm-4">
                    <div class="team-member">
-                       <img src="img/team/Yann.JPG" class="img-responsive img-circle" alt="">
+                       <img src="{{url('img/team/Yann.JPG')}}" class="img-responsive img-circle" alt="">
                        <h4>Yann</h4>
                        <p class="text-muted">"The Graphist"</p>
 
