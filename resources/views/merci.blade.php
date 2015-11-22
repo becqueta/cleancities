@@ -194,7 +194,7 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Call me maybe</h2>
-                    <h3 class="section-subheading text-muted">Envoi d'en savoir plus? Envoi nous un mail</h3>
+                    <h3 class="section-subheading text-muted">Envie d'en savoir plus? Envoie nous un mail</h3>
                 </div>
             </div>
             <div class="row">
