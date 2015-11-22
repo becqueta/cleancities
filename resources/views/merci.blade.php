@@ -74,7 +74,7 @@
                                     <h4 class="subheading">Norbert agit</h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p class="text-muted">Norbert envoie l'équipe d'intervention la plus proche pour boucher le trou signaler par Martin. </p>
+                                    <p class="text-muted">Norbert envoie l'équipe d'intervention la plus proche pour boucher le trou signalé par Martin. </p>
                                 </div>
                             </div>
                         </li>
@@ -182,7 +182,7 @@
            </div>
            <div class="row">
                <div class="col-lg-8 col-lg-offset-2 text-center">
-                   <p class="large text-muted">The whole team is working hard to provide you with the best app ever. Do not hesitate to show them your support.</p>
+                   <p class="large text-muted">Une équipe soudée de citoyens 3.0</p>
                </div>
            </div>
        </div>
