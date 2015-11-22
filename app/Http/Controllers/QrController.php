@@ -67,7 +67,7 @@ class QrController extends Controller
             $incident->id_type = 0;
             $incident->id_user = 0;
             $incident->date = date("Y-m-d H:i:s");
-            if(array_key_exists($id_qr, $this->loc_qr_code_poubelle[$id_qr])){
+            if(array_key_exists($id_qr, $this->loc_qr_code_poubelle)){
                  $incident->lat = $this->loc_qr_code_poubelle[$id_qr]['lat'];
                  $incident->lng = $this->loc_qr_code_poubelle[$id_qr]['lng'];
             }else{
@@ -84,7 +84,7 @@ class QrController extends Controller
             $incident->id_type = 0;
             $incident->id_user = 0;
             $incident->date = date("Y-m-d H:i:s");
-            if(array_key_exists($id_qr, $this->loc_qr_code_eclairage[$id_qr])){
+            if(array_key_exists($id_qr, $this->loc_qr_code_eclairage)){
                  $incident->lat = $this->loc_qr_code_eclairage[$id_qr]['lat'];
                 $incident->lng = $this->loc_qr_code_eclairage[$id_qr]['lng'];
             }else{
@@ -99,9 +99,9 @@ class QrController extends Controller
             $incident->id_type = 0;
             $incident->id_user = 0;
             $incident->date = date("Y-m-d H:i:s");
-            if(array_key_exists($id_qr, $this->loc_qr_code_eclairage[$id_qr])){
-                $incident->lat = $this->loc_qr_code_eclairage[$id_qr]['lat'];
-                $incident->lng = $this->loc_qr_code_eclairage[$id_qr]['lng'];
+            if(array_key_exists($id_qr, $this->loc_qr_code_degradation)){
+                $incident->lat = $this->loc_qr_code_degradation[$id_qr]['lat'];
+                $incident->lng = $this->loc_qr_code_degradation[$id_qr]['lng'];
             }else{
                 $incident->lat = 0;
                  $incident->lng =0;
