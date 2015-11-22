@@ -46,23 +46,23 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Cleancities</a>
+                <a class="navbar-brand page-scroll" href="{{url('/')}}#page-top">Cleancities</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="hidden">
-                        <a href="#page-top"></a>
+                        <a href="{{url('/')}}#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#about">A quoi ça sert?</a>
+                        <a class="page-scroll" href="{{url('/')}}#about">A quoi ça sert?</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#team">Qui sommes nous?</a>
+                        <a class="page-scroll" href="{{url('/')}}#team">Qui sommes nous?</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">Call me maybe</a>
+                        <a class="page-scroll" href="{{url('/')}}#contact">Call me maybe</a>
                     </li>
                 </ul>
             </div>

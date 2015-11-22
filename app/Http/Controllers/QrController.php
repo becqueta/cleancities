@@ -67,8 +67,14 @@ class QrController extends Controller
             $incident->id_type = 0;
             $incident->id_user = 0;
             $incident->date = date("Y-m-d H:i:s");
-            $incident->lat = $this->loc_qr_code_poubelle[$id_qr]['lat'];
-            $incident->lng = $this->loc_qr_code_poubelle[$id_qr]['lng'];;
+            if(array_key_exists($id_qr, $this->loc_qr_code_poubelle[$id_qr])){
+                 $incident->lat = $this->loc_qr_code_poubelle[$id_qr]['lat'];
+                 $incident->lng = $this->loc_qr_code_poubelle[$id_qr]['lng'];
+            }else{
+                $incident->lat = 0;
+                 $incident->lng =0;
+            }
+
             $incident->commentaire = $id_qr." ".$type_incident;
             $incident->save();
 
@@ -78,8 +84,14 @@ class QrController extends Controller
             $incident->id_type = 0;
             $incident->id_user = 0;
             $incident->date = date("Y-m-d H:i:s");
-            $incident->lat = $this->loc_qr_code_eclairage[$id_qr]['lat'];
-            $incident->lng = $this->loc_qr_code_eclairage[$id_qr]['lng'];;
+            if(array_key_exists($id_qr, $this->loc_qr_code_eclairage[$id_qr])){
+                 $incident->lat = $this->loc_qr_code_eclairage[$id_qr]['lat'];
+                $incident->lng = $this->loc_qr_code_eclairage[$id_qr]['lng'];
+            }else{
+                $incident->lat = 0;
+                 $incident->lng =0;
+            }
+            $incident->commentaire = $id_qr." ".$type_incident;
             $incident->save();
         }elseif($type_incident == 'degradation'){
 
@@ -87,8 +99,14 @@ class QrController extends Controller
             $incident->id_type = 0;
             $incident->id_user = 0;
             $incident->date = date("Y-m-d H:i:s");
-            $incident->lat = $this->loc_qr_code_degradation[$id_qr]['lat'];
-            $incident->lng = $this->loc_qr_code_degradation[$id_qr]['lng'];;
+            if(array_key_exists($id_qr, $this->loc_qr_code_eclairage[$id_qr])){
+                $incident->lat = $this->loc_qr_code_eclairage[$id_qr]['lat'];
+                $incident->lng = $this->loc_qr_code_eclairage[$id_qr]['lng'];
+            }else{
+                $incident->lat = 0;
+                 $incident->lng =0;
+            }
+            $incident->commentaire = $id_qr." ".$type_incident;
             $incident->save();
         }
         return view('merci');
