@@ -262,8 +262,8 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-12">
-                    <a href="mailto:cleancitieswg@gmail.com ">cleancitieswg@gmail.com </a>
+                <div class="col-lg-12 text-center">
+                    <a href="mailto:cleancitieswg@gmail.com">cleancitieswg@gmail.com </a>
                 </div>
             </div>
         </div>
