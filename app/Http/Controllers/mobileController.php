@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use App\Incident;
 
 class mobileController extends Controller
 {
@@ -17,31 +18,11 @@ class mobileController extends Controller
     public function index()
     {
         //
-        return view('mobile.index');
+        //
+        $incidents = Incident::All();
+        return view('dashboard')->with('scans', $incidents);
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function signaler()
-    {
-        //
-        return view('mobile.report');
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function scanner()
-    {
-        //
-        return view('mobile.scanner');
-    }
 
     /**
      * Display the specified resource.
@@ -52,39 +33,11 @@ class mobileController extends Controller
     public function show($id)
     {
         //
+       $incident = Incident::find($id);
+       $incident->lat = str_replace(',', '.', $incident->lat);
+       $incident->lng = str_replace(',', '.', $incident->lng);
+       return view('detail')->with('scan', $incident);
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function edit($id)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, $id)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy($id)
-    {
-        //
-    }
+   
 }

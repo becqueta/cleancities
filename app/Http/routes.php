@@ -19,9 +19,5 @@ Route::get('titi', 'titiController@index');
 
 Route::get('qrcode/{type_incident}/{id_qr}', 'QrController@getIncident');
 
-Route::get('dashboard', 'dashboardController@index');
-
-Route::get('mobile/', 'mobileController@index');
-
-Route::get('mobile/report', 'mobileController@signaler');
-Route::get('mobile/scanner', 'mobileController@scanner');
+Route::get('dashboard', 'mobileController@index');
+Route::get('detail/{id}', 'mobileController@show');
